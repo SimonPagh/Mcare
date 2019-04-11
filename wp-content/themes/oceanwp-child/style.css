@@ -1,0 +1,81 @@
+/* 
+Theme Name: oceanwp child
+Author URI: http//simonpagh.com/
+Author: Simon Pagh
+Template: oceanwp
+Version: 1.0
+*/
+
+
+
+header.page-header {
+    display: none;
+}
+
+div#site-logo-inner {
+    display: none !important;
+}
+
+
+
+.shake-bottom {
+	        animation: shake-bottom 5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+@keyframes shake-bottom {
+  0%,
+  100% {
+      transform: rotate(0deg);
+      transform-origin: 50% 100%;
+  }
+  10% {
+      transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+      transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {     
+      transform: rotate(4deg);
+  }
+  80% {
+      
+      transform: rotate(-2deg);
+  }
+    
+  90% {
+      transform: rotate(2deg);
+  }
+}
+
+.shake-vertical {
+	        animation: shake-vertical 5s linear infinite both;
+}
+
+
+@keyframes shake-vertical {
+  0%,
+  100% {
+            transform: translateY(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+            transform: translateY(-8px);
+  }
+  20%,
+  40%,
+  60% {
+            transform: translateY(8px);
+  }
+  80% {
+            transform: translateY(6.4px);
+  }
+  90% {
+            transform: translateY(-6.4px);
+  }
+}
